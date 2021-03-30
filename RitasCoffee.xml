@@ -1,11 +1,148 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="RitasCoffee.xsl"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet type="text/xsl" href="RitasCoffee.xsl" ?>
 <cafemenu>
-    
-    <section name="Drinks">
+
+    <section name="Hot Coffees">
+        <entree>
+            <item>Caffe Latte</item>
+            <price>3.80</price>
+        </entree>
+        <entree>
+            <item>Cappuccino</item>
+            <price>3.80</price>
+        </entree>
+        <entree>
+            <item>Americano</item>
+            <price>3.10</price>
+        </entree>
+        <entree>
+            <item>Flat White</item>
+            <price>3.25</price>
+        </entree>
+        <entree>
+            <item>Mocha Latte Dark or White</item>
+            <price>4.10</price>
+        </entree>
+        <entree>
+            <item>Caramel Macchiato</item>
+            <price>4.25</price>
+        </entree>
+        <entree>
+            <item>Expresso Macchiato</item>
+            <price>2.90</price>
+        </entree>
+        <entree>
+            <item>Expresso Double</item>
+            <price>2.60</price>
+        </entree>
+    </section>
+
+    <section name="Special Hot Drinks">
+        <entree>
+            <item>Hot Chocolate</item>
+            <price>4.10</price>
+        </entree>
+        <entree>
+            <item>Cookie Hot Chocolate</item>
+            <price>4.35</price>
+        </entree>
+        <entree>
+            <item>White Hot Chocolate</item>
+            <price>3.95</price>
+        </entree>
+        <entree>
+            <item>Regular Dark Tea</item>
+            <price>2.50</price>
+        </entree>
+        <entree>
+            <item>Speciall Fruit Tea</item>
+            <price>2.75</price>
+        </entree>
+        <entree>
+            <item>Chai Latte</item>
+            <price>3.95</price>
+        </entree>
          <entree>
-             <item>Pepsi</item>
-             <price>2.00</price>
+             <item>Vanilla Matcha Latte</item>
+             <price>3.45</price>
          </entree>
+    </section>
+
+    <section name="Iced Coffees">
+        <entree>
+            <item>Oreo Icecap</item>
+            <price>4.40</price>
+        </entree>
+        <entree>
+            <item>Salted Caramel Latte Icecap</item>
+            <price>4.40</price>
+        </entree>
+        <entree>
+            <item>Iced Americano</item>
+            <price>3.10</price>
+        </entree>
+        <entree>
+            <item>Iced Caffe Latte</item>
+            <price>3.80</price>
+        </entree>
+        <entree>
+            <item>Iced Caffe Mocha</item>
+            <price>4.10</price>
+        </entree>
+        <entree vegetarian="true">
+            <item>Coconut Milk</item>
+            <price>0.50</price>
+        </entree>
+        <entree vegetarian="true">
+            <item>Oat Milk</item>
+            <price>0.50</price>
+        </entree>
+        <entree vegetarian="true">
+            <item>Soya Milk</item>
+            <price>0.50</price>
+        </entree>
+        <entree vegetarian="true">
+            <item>Almond Milk</item>
+            <price>0.50</price>
+        </entree>
+
+    </section>
+
+    <section name="Kid's Drinks">
+        <entree>
+            <item>Kids Hot Chocolate</item>
+            <price>2.95</price>
+        </entree>
+        <entree>
+            <item>Kids White Angel</item>
+            <price>2.95</price>
+        </entree>
+        <entree>
+            <item>Babyccino</item>
+            <price>1.75</price>
+        </entree>
+    </section>
+
+    <section name="Cakes">
+        <entree>
+            <item>Muffin</item>
+            <price>2.50</price>
+        </entree>
+        <entree>
+            <item>Apple Slice</item>
+            <price>2.70</price>
+        </entree>
+        <entree>
+            <item>Rocky Road</item>
+            <price>2.70</price>
+        </entree>
+        <entree>
+            <item>Croissant</item>
+            <price>1.00</price>
+        </entree>
+        <entree vegetarian="true">
+            <item>Vegetarian Brownie</item>
+            <price>2.70</price>
+        </entree>
     </section>
 </cafemenu>
