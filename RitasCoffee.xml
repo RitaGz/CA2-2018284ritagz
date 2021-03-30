@@ -35,6 +35,10 @@
             <item>Expresso Double</item>
             <price>2.60</price>
         </entree>
+        <entree vegetarian="true">
+            <item>Vegetarian Black Coffee Bean (extra)</item>
+            <price>0.30</price>
+        </entree>
     </section>
 
     <section name="Special Hot Drinks">
@@ -89,6 +93,8 @@
             <item>Iced Caffe Mocha</item>
             <price>4.10</price>
         </entree>
+    </section>    
+    <section name="Dairy-Free Milk Options">
         <entree vegetarian="true">
             <item>Coconut Milk</item>
             <price>0.50</price>
@@ -105,7 +111,6 @@
             <item>Almond Milk</item>
             <price>0.50</price>
         </entree>
-
     </section>
 
     <section name="Kid's Drinks">
