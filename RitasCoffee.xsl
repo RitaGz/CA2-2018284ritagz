@@ -9,9 +9,9 @@
                 <script type="text/javascript" src="js/RitasCoffee.js">x</script>
             </head>
             <body>
-                <h2>
+                <!-- <h2>
                     Welcome to Rita's Coffee Take Away
-                </h2>
+                </h2> -->
                 <p>
                     <ul>
                         <li>Select your entrees from the menu below.</li>
@@ -26,8 +26,8 @@
                         </tr>
                         <tr>
                             <th>Select</th>
-                            <th>Item</th>
-                            <th>Price</th>
+                            <th>Product</th>
+                            <th>Price € </th>
                         </tr>
                     </thead>
                     <tbody>
