@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
+<?xml version="1.0" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-<xsl:template match="/">
+    <xsl:template match="/">
         <html>
             <head>
                 <title>Rita's Coffee</title>
@@ -56,7 +56,7 @@
                         </xsl:for-each>
                     </tbody>
                 </table>
-                <form class="indent">
+                <!-- <form class="indent">
                     <p>
                         <input type="button" name="btnCalcBill" value="Calculate Bill" id="calcBill" />
                         Total: €
@@ -64,7 +64,7 @@
                         <input type="checkbox" name="cbOpts" value="isVeg" id="showVeg" />
                         <label for="showVeg">Highlight Vegetarian Options</label>
                     </p>
-                </form>
+                </form> -->
             </body>
         </html>
     </xsl:template>
