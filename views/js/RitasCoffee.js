@@ -1,4 +1,3 @@
-var gEntreeCount = 0;
 // returns a number that represents the sum of all the selected menu
 // item prices.
 function calculateBill(idMenuTable) {
@@ -6,13 +5,12 @@ function calculateBill(idMenuTable) {
     var i = 0;
 
     // find the table tag
-    var oTable = document.getElementById(idMenuTable);
+    var aCBTags = document.querySelectorAll('input');
 
     // go through the table and add up the prices of all
     // the selected items. The code takes advantage of the 
     // fact that each checkbox has a corresponding row in
     // the table, and the only INPUT tags are the checkboxes.
-    var aCBTags = oTable.getElementsByTagName('INPUT');
     for (i = 0; i < aCBTags.length; i++) {
         // is this menu item selected? it is if the checkbox is checked
         if (aCBTags[i].checked) {
@@ -33,16 +31,16 @@ function calculateBill(idMenuTable) {
 // items (depending on the value of bShowVeg)
 function highlightVegetarian(idTable, bShowVeg) {
     // if bShowVeg is true, then we're highlighting vegetarian
-    //	meals, otherwise we're unhighlighting them.
+    //	options, otherwise we're unhighlighting them.
     var i = 0;
     var oTable = document.getElementById(idTable);
 
-    var oTBODY = oTable.getElementsByTagName('TBODY')[0];
-    var aTRs = oTBODY.getElementsByTagName('TR');
+    var oTBODY = oTable.getElementsByTagName('tbody')[0];
+    var aTRs = oTBODY.getElementsByTagName('tr');
     // walk through each of the table rows and see if it has a 
     // "vegetarian" attribute on it.
     for (i = 0; i < aTRs.length; i++) {
-        if (aTRs[i].getAttribute('vegetarian') && aTRs[i].getAttribute('vegetarian') == "true") {
+        if (aTRs[i].getAttribute('vegetarian') == "true") {    
             if (bShowVeg) {
                 aTRs[i].style.backgroundColor = "lightGreen";
             } else {
@@ -63,13 +61,14 @@ function getParentTag(oNode, sParentType) {
     };
     return oParent;
 };
+//this part went to the index.html
 
-window.addEventListener("load", function () {
-    document.forms[0].txtBillAmt.value = calculateBill('menuTable');
-    document.querySelector("#calcBill").addEventListener("click", function () {
-        document.forms[0].txtBillAmt.value = calculateBill('menuTable');
-    });
-    document.querySelector("#showVeg").addEventListener("click", function () {
-        highlightVegetarian('menuTable', this.checked);
-    });
-});
+// window.addEventListener("load", function () {
+//     document.forms[0].txtBillAmt.value = calculateBill('menuTable');
+//     document.querySelector("#calcBill").addEventListener("click", function () {
+//         document.forms[0].txtBillAmt.value = calculateBill('menuTable');
+//     });
+//     document.querySelector("#showVeg").addEventListener("click", function () {
+//         highlightVegetarian('menuTable', this.checked);
+//     });
+// });
