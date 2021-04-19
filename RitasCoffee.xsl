@@ -9,9 +9,6 @@
                 <script type="text/javascript" src="js/RitasCoffee.js">x</script>
             </head>
             <body>
-                <!-- <h2>
-                    Welcome to Rita's Coffee Take Away
-                </h2> -->
                 <p>
                     <ul>
                         <li>Select your entrees from the menu below.</li>
@@ -38,7 +35,8 @@
                                 </td>
                             </tr>
                             <xsl:for-each select="entree">
-                                <tr>
+                                <!-- this next function gives us the position of the entree, we can grab the item by its ID -->
+                                <tr id="{position()}"> 
                                     <xsl:attribute name="vegetarian">
                                         <xsl:value-of select="boolean(@vegetarian)" />
                                     </xsl:attribute>

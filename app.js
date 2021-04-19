@@ -9,7 +9,9 @@ var http = require('http'), //This module provides the HTTP server functionaliti
 var router = express(); //We set our routing to be handled by Express
 var server = http.createServer(router); //This is where our server gets created
 
-router.use(express.static(path.resolve(__dirname,'views'))); //we serve static content from views folder
+router.use(express.static(path.resolve(__dirname, 'views'))); //We define the views folder as the one where all static content will be served
+router.use(express.urlencoded({extended: true})); //We allow the data sent from the client to be coming in as part of the URL in GET and POST requests
+router.use(express.json()); //We include support for JSON that is coming from the client
 
 // Function to read in XML file and convert it to JSON
 function xmlFileToJs(filename, cb) {
