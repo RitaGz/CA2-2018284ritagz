@@ -2,10 +2,24 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  margin-top: 60px;
+  background-color: whitesmoke;
 }
+
+.navbar-brand{
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav-link{
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -13,26 +27,44 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
+  background-color: #770081;
+  font-weight: bolder;
+
 }
+.text-white{
+    font-style: italic;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
 table, th, td {
      border-collapse: collapse;
      border: 1px solid black;
      text-align: center;
+     /* background-color: white; */
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-weight: bold;
 }
  table {
      border-collapse: collapse;
      width:100%;
 }
  td, th {
-     border: 1px solid #335c85;
+     border: 1px solid #080808;
      padding: 0.5rem;
      text-align: left;
 }
  th {
-     font-weight: bold;
+     font-weight: bolder;
+     text-align: center;
+     text-size-adjust: 2px;
+     background-color: rgb(71, 49, 68);
+     color: white;
 }
+
 .selected {
-            background-color: #dc3545;
-            color: #FFF;
+            background-color: #a941b3;
+            color:  white;
 }

@@ -12,14 +12,16 @@
                 <p>
                     <ul>
                         <li>Select your entrees from the menu below.</li>
-                        <li>To calculate the amount of the bill, click the Calculate Bill button.</li>
-                        <li>Check the "Highlight Vegetarian Options" box to highlight vegetarian choices.</li>
+                        <li>To calculate the total amount of your selected items, click the Calculate Bill button.</li>
+                        <li>Check the box above right up to the Calculate Bill button, to highlight in green the Vegetarian Options.</li>
+                        <li>Select on the right hand side, an entree, enter a new product below and then its new price, clickon Submit!.</li>
+                        <li>Select any item on the list you want to delete, then click on the Delete button.</li>
                     </ul>
                 </p>
                 <table id="menuTable" border="1" class="indent">
                     <thead>
                         <tr>
-                            <th colspan="3">Rita's Coffee Menu</th>
+                            <th colspan="3">Menu</th>
                         </tr>
                         <tr>
                             <th>Select</th>
