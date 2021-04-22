@@ -112,3 +112,10 @@ server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function ()
     var addr = server.address();
     console.log("Server listnening at", addr.address + ":" + addr.port);
 });
+
+//this part of code was added for the CA2
+const http = require('http');
+http.createServer((req, res)=>{
+res.write("Hello world \n"); // write a response
+res.end(); //end the response
+}).listen(8000); // listen for requests on port 8000

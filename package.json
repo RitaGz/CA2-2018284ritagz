@@ -1,0 +1,30 @@
+{
+  "name": "ca2-2018284ritagz",
+  "version": "0.0.1",
+  "description": "my CA2 for IWA rita",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7",
+    "xml2js": "^0.4.23",
+    "xslt-processor": "^0.11.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RitaGz/CA2-2018284ritagz.git"
+  },
+  "author": "Rita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RitaGz/CA2-2018284ritagz/issues"
+  },
+  "homepage": "https://github.com/RitaGz/CA2-2018284ritagz#readme"
+}
