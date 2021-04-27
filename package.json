@@ -4,6 +4,7 @@
   "description": "CA2 IWA",
   "main": "app.js",
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
@@ -11,7 +12,6 @@
     "xml2js": "^0.4.23",
     "xslt-processor": "^0.11.5"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "nodemon app.js",
     "start": "node app.js"
