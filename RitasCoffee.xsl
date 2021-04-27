@@ -12,8 +12,10 @@
                 <p>
                     <ul>
                         <li>Select your entrees from the menu below.</li>
-                        <li>To calculate the amount of the bill, click the Calculate Bill button.</li>
+                        <li>To calculate the amount of the bill, select the items you wish and click the Calculate Bill button.</li>
                         <li>Check the "Highlight Vegetarian Options" box to highlight vegetarian choices.</li>
+                        <li>If you want to add a new item, select the entry, then write a new name and new price, then clickthe Green button "Submit".</li>
+                        <li>If you want to delete an item, select the row you want to delete, then press the red button "Delete".</li>
                     </ul>
                 </p>
                 <table id="menuTable" border="1" class="indent">

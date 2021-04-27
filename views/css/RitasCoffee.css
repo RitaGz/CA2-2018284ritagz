@@ -6,6 +6,22 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+a.navbar-brand {
+    font-weight: bolder;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+button.navbar-toggler{
+    color: black;
+}
+a.nav-link{
+    color: white;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -13,7 +29,8 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
+  background-color: #5e28b4;
+  font-weight: bolder;
 }
 table, th, td {
      border-collapse: collapse;
@@ -25,14 +42,17 @@ table, th, td {
      width:100%;
 }
  td, th {
-     border: 1px solid #335c85;
+     border: 1px solid black;
      padding: 0.5rem;
      text-align: left;
 }
  th {
-     font-weight: bold;
+     font-weight: bolder;
+     color: white;
+     text-align: center;
+     background-color: rgb(120, 39, 226);
 }
 .selected {
-            background-color: #dc3545;
+            background-color: #cf68f8;
             color: #FFF;
 }
