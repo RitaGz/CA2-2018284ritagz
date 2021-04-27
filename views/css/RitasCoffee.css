@@ -52,6 +52,7 @@ table, th, td {
      font-weight: bolder;
      color: white;
      text-align: center;
+     font-size: 20px ;
      background-color: rgb(120, 39, 226);
 }
 .selected {
