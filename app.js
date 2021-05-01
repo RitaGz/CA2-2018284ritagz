@@ -9,6 +9,45 @@ var http = require('http'), //This module provides the HTTP server functionaliti
 var router = express(); //We set our routing to be handled by Express
 var server = http.createServer(router); //This is where our server gets created
 
+// const dotenv = require("dotenv");
+// if (process.env.NODE_ENV !== 'production') {
+//   require('dotenv').load() // this is going to load all the variables in the .env file and it's going to import the process env variable into my app
+// }
+const dotenv = require("dotenv");
+dotenv.config();
+
+const mongoose = require('mongoose')
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
+const db = mongoose.connection
+db.on('error', error => console.error(error))
+db.once('open', () => console.log('Connected to Mongoose'))
+
+
+// axios = require('axios'),
+// const logger = require('morgan'),
+//cors = require('cors'),
+// express = require('express'),
+// bodyParser = require('body-parser'),
+// dotenv = require("dotenv");
+// dotenv.config();
+
+// const app = express()
+// const expressLayouts = require('express-ejs-layouts')
+
+// const indexRouter = require('./routes.js')
+
+// app.set('view engine', 'ejs')
+// app.set('views', __dirname + '/views')
+// app.set('layout', 'layouts/layout')
+// app.use(expressLayouts)
+// app.use(express.static('public'))
+// app.use(bodyParser.json());
+// app.use(logger('tiny'));
+// app.use(require('./routes.js'));
+
+// app.listen(process.env.PORT || 3000)
+
+
 router.use(express.static(path.resolve(__dirname, 'views'))); //We define the views folder as the one where all static content will be served
 router.use(express.urlencoded({extended: true})); //We allow the data sent from the client to be coming in as part of the URL in GET and POST requests
 router.use(express.json()); //We include support for JSON that is coming from the client
